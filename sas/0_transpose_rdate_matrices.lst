@@ -1,0 +1,352 @@
+                                           The SAS System     11:01 Wednesday, November 25, 2009   1
+
+                                       The CONTENTS Procedure
+
+ Data Set Name        FIRMNET.RDATE20033                               Observations          520946
+ Member Type          DATA                                             Variables             7     
+ Engine               V9                                               Indexes               0     
+ Created              Tuesday, November 24, 2009 03:17:55 PM           Observation Length    48    
+ Last Modified        Tuesday, November 24, 2009 03:17:55 PM           Deleted Observations  0     
+ Protection                                                            Compressed            NO    
+ Data Set Type                                                         Sorted                NO    
+ Label                                                                                             
+ Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                
+ Encoding             latin1  Western (ISO)                                                        
+
+
+                                 Engine/Host Dependent Information
+
+             Data Set Page Size          8192                                         
+             Number of Data Set Pages    3083                                         
+             First Data Page             1                                            
+             Max Obs per Page            169                                          
+             Obs in First Data Page      113                                          
+             Number of Data Set Repairs  0                                            
+             File Name                   /smallfs/jabloche/firmnet/rdate20033.sas7bdat
+             Release Created             9.0101M3                                     
+             Host Created                SunOS                                        
+             Inode Number                2305300                                      
+             Access Permission           rw-------                                    
+             Owner Name                  jabloche                                     
+             File Size (bytes)           25264128                                     
+
+
+                             Alphabetic List of Variables and Attributes
+ 
+                      #    Variable    Type    Len    Format    Label
+
+                      5    block       Num       8                            
+                      3    cusip       Char      8              Cusip         
+                      2    mgrno       Num       8              Manager Number
+                      4    pct_held    Num       8                            
+                      1    rdate       Num       8    DATE9.    Report Date   
+                      7    txtMo       Char      2                            
+                      6    txtYr       Char      4                            
+                                           The SAS System     11:01 Wednesday, November 25, 2009   2
+
+                                       The CONTENTS Procedure
+
+ Data Set Name        FIRMNET.RDATE20033                               Observations          520946
+ Member Type          DATA                                             Variables             7     
+ Engine               V9                                               Indexes               0     
+ Created              Tuesday, November 24, 2009 03:17:55 PM           Observation Length    48    
+ Last Modified        Tuesday, November 24, 2009 03:17:55 PM           Deleted Observations  0     
+ Protection                                                            Compressed            NO    
+ Data Set Type                                                         Sorted                NO    
+ Label                                                                                             
+ Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                
+ Encoding             latin1  Western (ISO)                                                        
+
+
+                                 Engine/Host Dependent Information
+
+             Data Set Page Size          8192                                         
+             Number of Data Set Pages    3083                                         
+             First Data Page             1                                            
+             Max Obs per Page            169                                          
+             Obs in First Data Page      113                                          
+             Number of Data Set Repairs  0                                            
+             File Name                   /smallfs/jabloche/firmnet/rdate20033.sas7bdat
+             Release Created             9.0101M3                                     
+             Host Created                SunOS                                        
+             Inode Number                2305300                                      
+             Access Permission           rw-------                                    
+             Owner Name                  jabloche                                     
+             File Size (bytes)           25264128                                     
+
+
+                             Alphabetic List of Variables and Attributes
+ 
+                      #    Variable    Type    Len    Format    Label
+
+                      5    block       Num       8                            
+                      3    cusip       Char      8              Cusip         
+                      2    mgrno       Num       8              Manager Number
+                      4    pct_held    Num       8                            
+                      1    rdate       Num       8    DATE9.    Report Date   
+                      7    txtMo       Char      2                            
+                      6    txtYr       Char      4                            
+                                           The SAS System     11:01 Wednesday, November 25, 2009   3
+
+                                       The CONTENTS Procedure
+
+ Data Set Name        FIRMNET.RDATE20036                               Observations          532665
+ Member Type          DATA                                             Variables             7     
+ Engine               V9                                               Indexes               0     
+ Created              Tuesday, November 24, 2009 03:18:04 PM           Observation Length    48    
+ Last Modified        Tuesday, November 24, 2009 03:18:04 PM           Deleted Observations  0     
+ Protection                                                            Compressed            NO    
+ Data Set Type                                                         Sorted                NO    
+ Label                                                                                             
+ Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                
+ Encoding             latin1  Western (ISO)                                                        
+
+
+                                 Engine/Host Dependent Information
+
+             Data Set Page Size          8192                                         
+             Number of Data Set Pages    3153                                         
+             First Data Page             1                                            
+             Max Obs per Page            169                                          
+             Obs in First Data Page      113                                          
+             Number of Data Set Repairs  0                                            
+             File Name                   /smallfs/jabloche/firmnet/rdate20036.sas7bdat
+             Release Created             9.0101M3                                     
+             Host Created                SunOS                                        
+             Inode Number                2305273                                      
+             Access Permission           rw-------                                    
+             Owner Name                  jabloche                                     
+             File Size (bytes)           25837568                                     
+
+
+                             Alphabetic List of Variables and Attributes
+ 
+                      #    Variable    Type    Len    Format    Label
+
+                      5    block       Num       8                            
+                      3    cusip       Char      8              Cusip         
+                      2    mgrno       Num       8              Manager Number
+                      4    pct_held    Num       8                            
+                      1    rdate       Num       8    DATE9.    Report Date   
+                      7    txtMo       Char      2                            
+                      6    txtYr       Char      4                            
+                                           The SAS System     11:01 Wednesday, November 25, 2009   4
+
+                                       The CONTENTS Procedure
+
+ Data Set Name        FIRMNET.RDATE20076                               Observations          734355
+ Member Type          DATA                                             Variables             7     
+ Engine               V9                                               Indexes               0     
+ Created              Tuesday, November 24, 2009 03:29:02 PM           Observation Length    48    
+ Last Modified        Tuesday, November 24, 2009 03:29:02 PM           Deleted Observations  0     
+ Protection                                                            Compressed            NO    
+ Data Set Type                                                         Sorted                NO    
+ Label                                                                                             
+ Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                
+ Encoding             latin1  Western (ISO)                                                        
+
+
+                                 Engine/Host Dependent Information
+
+             Data Set Page Size          8192                                         
+             Number of Data Set Pages    4346                                         
+             First Data Page             1                                            
+             Max Obs per Page            169                                          
+             Obs in First Data Page      113                                          
+             Number of Data Set Repairs  0                                            
+             File Name                   /smallfs/jabloche/firmnet/rdate20076.sas7bdat
+             Release Created             9.0101M3                                     
+             Host Created                SunOS                                        
+             Inode Number                239427                                       
+             Access Permission           rw-------                                    
+             Owner Name                  jabloche                                     
+             File Size (bytes)           35610624                                     
+
+
+                             Alphabetic List of Variables and Attributes
+ 
+                      #    Variable    Type    Len    Format    Label
+
+                      5    block       Num       8                            
+                      3    cusip       Char      8              Cusip         
+                      2    mgrno       Num       8              Manager Number
+                      4    pct_held    Num       8                            
+                      1    rdate       Num       8    DATE9.    Report Date   
+                      7    txtMo       Char      2                            
+                      6    txtYr       Char      4                            
+                                           The SAS System     11:01 Wednesday, November 25, 2009   5
+
+                                       The CONTENTS Procedure
+
+ Data Set Name        FIRMNET.RDATE20079                               Observations          701781
+ Member Type          DATA                                             Variables             7     
+ Engine               V9                                               Indexes               0     
+ Created              Tuesday, November 24, 2009 03:30:20 PM           Observation Length    48    
+ Last Modified        Tuesday, November 24, 2009 03:30:20 PM           Deleted Observations  0     
+ Protection                                                            Compressed            NO    
+ Data Set Type                                                         Sorted                NO    
+ Label                                                                                             
+ Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                
+ Encoding             latin1  Western (ISO)                                                        
+
+
+                                 Engine/Host Dependent Information
+
+             Data Set Page Size          8192                                         
+             Number of Data Set Pages    4153                                         
+             First Data Page             1                                            
+             Max Obs per Page            169                                          
+             Obs in First Data Page      113                                          
+             Number of Data Set Repairs  0                                            
+             File Name                   /smallfs/jabloche/firmnet/rdate20079.sas7bdat
+             Release Created             9.0101M3                                     
+             Host Created                SunOS                                        
+             Inode Number                239421                                       
+             Access Permission           rw-------                                    
+             Owner Name                  jabloche                                     
+             File Size (bytes)           34029568                                     
+
+
+                             Alphabetic List of Variables and Attributes
+ 
+                      #    Variable    Type    Len    Format    Label
+
+                      5    block       Num       8                            
+                      3    cusip       Char      8              Cusip         
+                      2    mgrno       Num       8              Manager Number
+                      4    pct_held    Num       8                            
+                      1    rdate       Num       8    DATE9.    Report Date   
+                      7    txtMo       Char      2                            
+                      6    txtYr       Char      4                            
+                                           The SAS System     11:01 Wednesday, November 25, 2009   6
+
+                                       The CONTENTS Procedure
+
+ Data Set Name        FIRMNET.RDATE20079                               Observations          701781
+ Member Type          DATA                                             Variables             7     
+ Engine               V9                                               Indexes               0     
+ Created              Tuesday, November 24, 2009 03:30:20 PM           Observation Length    48    
+ Last Modified        Tuesday, November 24, 2009 03:30:20 PM           Deleted Observations  0     
+ Protection                                                            Compressed            NO    
+ Data Set Type                                                         Sorted                NO    
+ Label                                                                                             
+ Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                
+ Encoding             latin1  Western (ISO)                                                        
+
+
+                                 Engine/Host Dependent Information
+
+             Data Set Page Size          8192                                         
+             Number of Data Set Pages    4153                                         
+             First Data Page             1                                            
+             Max Obs per Page            169                                          
+             Obs in First Data Page      113                                          
+             Number of Data Set Repairs  0                                            
+             File Name                   /smallfs/jabloche/firmnet/rdate20079.sas7bdat
+             Release Created             9.0101M3                                     
+             Host Created                SunOS                                        
+             Inode Number                239421                                       
+             Access Permission           rw-------                                    
+             Owner Name                  jabloche                                     
+             File Size (bytes)           34029568                                     
+
+
+                             Alphabetic List of Variables and Attributes
+ 
+                      #    Variable    Type    Len    Format    Label
+
+                      5    block       Num       8                            
+                      3    cusip       Char      8              Cusip         
+                      2    mgrno       Num       8              Manager Number
+                      4    pct_held    Num       8                            
+                      1    rdate       Num       8    DATE9.    Report Date   
+                      7    txtMo       Char      2                            
+                      6    txtYr       Char      4                            
+                                           The SAS System     11:01 Wednesday, November 25, 2009   7
+
+                                       The CONTENTS Procedure
+
+ Data Set Name        FIRMNET.RDATE200712                              Observations          722344
+ Member Type          DATA                                             Variables             7     
+ Engine               V9                                               Indexes               0     
+ Created              Tuesday, November 24, 2009 03:26:27 PM           Observation Length    48    
+ Last Modified        Tuesday, November 24, 2009 03:26:27 PM           Deleted Observations  0     
+ Protection                                                            Compressed            NO    
+ Data Set Type                                                         Sorted                NO    
+ Label                                                                                             
+ Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                
+ Encoding             latin1  Western (ISO)                                                        
+
+
+                                 Engine/Host Dependent Information
+
+             Data Set Page Size          8192                                          
+             Number of Data Set Pages    4275                                          
+             First Data Page             1                                             
+             Max Obs per Page            169                                           
+             Obs in First Data Page      113                                           
+             Number of Data Set Repairs  0                                             
+             File Name                   /smallfs/jabloche/firmnet/rdate200712.sas7bdat
+             Release Created             9.0101M3                                      
+             Host Created                SunOS                                         
+             Inode Number                14740600                                      
+             Access Permission           rw-------                                     
+             Owner Name                  jabloche                                      
+             File Size (bytes)           35028992                                      
+
+
+                             Alphabetic List of Variables and Attributes
+ 
+                      #    Variable    Type    Len    Format    Label
+
+                      5    block       Num       8                            
+                      3    cusip       Char      8              Cusip         
+                      2    mgrno       Num       8              Manager Number
+                      4    pct_held    Num       8                            
+                      1    rdate       Num       8    DATE9.    Report Date   
+                      7    txtMo       Char      2                            
+                      6    txtYr       Char      4                            
+                                           The SAS System     11:01 Wednesday, November 25, 2009   8
+
+                                       The CONTENTS Procedure
+
+ Data Set Name        FIRMNET.RDATE200712                              Observations          722344
+ Member Type          DATA                                             Variables             7     
+ Engine               V9                                               Indexes               0     
+ Created              Tuesday, November 24, 2009 03:26:27 PM           Observation Length    48    
+ Last Modified        Tuesday, November 24, 2009 03:26:27 PM           Deleted Observations  0     
+ Protection                                                            Compressed            NO    
+ Data Set Type                                                         Sorted                NO    
+ Label                                                                                             
+ Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                
+ Encoding             latin1  Western (ISO)                                                        
+
+
+                                 Engine/Host Dependent Information
+
+             Data Set Page Size          8192                                          
+             Number of Data Set Pages    4275                                          
+             First Data Page             1                                             
+             Max Obs per Page            169                                           
+             Obs in First Data Page      113                                           
+             Number of Data Set Repairs  0                                             
+             File Name                   /smallfs/jabloche/firmnet/rdate200712.sas7bdat
+             Release Created             9.0101M3                                      
+             Host Created                SunOS                                         
+             Inode Number                14740600                                      
+             Access Permission           rw-------                                     
+             Owner Name                  jabloche                                      
+             File Size (bytes)           35028992                                      
+
+
+                             Alphabetic List of Variables and Attributes
+ 
+                      #    Variable    Type    Len    Format    Label
+
+                      5    block       Num       8                            
+                      3    cusip       Char      8              Cusip         
+                      2    mgrno       Num       8              Manager Number
+                      4    pct_held    Num       8                            
+                      1    rdate       Num       8    DATE9.    Report Date   
+                      7    txtMo       Char      2                            
+                      6    txtYr       Char      4                            

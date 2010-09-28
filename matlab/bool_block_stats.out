@@ -1,0 +1,250 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Matrix Statistics for type_data: bool_blk
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_1
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_2
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_3
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_4
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_5
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_6
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_7
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_8
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_9
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_10
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_11
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_12
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_13
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_14
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_15
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_16
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_17
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_18
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_19
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_20
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_21
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_22
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_23
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_24
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_25
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_26
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_27
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_28
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_29
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_30
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_31
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_32
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_33
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_34
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_35
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_36
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_37
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_38
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_39
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_40
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_41
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_42
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_43
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_44
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_45
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_46
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_47
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_48
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_49
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_50
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_51
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_52
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_53
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_54
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_55
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_56
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_57
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_58
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_59
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_60
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_61
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_62
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_63
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_64
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_65
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_66
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_67
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_68
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_69
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_70
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_71
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_72
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_73
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_74
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_75
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_76
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_77
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_78
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_79
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_80
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_81
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_82
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_83
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_84
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_85
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_86
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_87
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_88
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_89
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_90
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_91
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_92
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_93
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_94
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_95
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_96
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_97
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_98
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_99
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_100
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_101
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_102
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_103
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_104
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_105
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_106
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_107
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_108
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_109
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_110
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_111
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_112
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_113
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_114
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_115
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_116
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_117
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_118
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_119
+Your MATLAB session has timed out.  All license keys have been returned.

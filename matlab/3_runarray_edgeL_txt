@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Smaller test command - regular
+bsub -J "edgeL_txt[1-24]" -q week -o "edgeL_txt%I.out"  -R blade matlab -nodisplay -nojvm -nosplash -r write_edgeL_txt

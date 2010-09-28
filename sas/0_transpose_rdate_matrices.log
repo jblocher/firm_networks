@@ -1,0 +1,597 @@
+1                                                          The SAS System                         11:01 Wednesday, November 25, 2009
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Copyright (c) 2002-2003 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) 9.1 (TS1M3)
+      Licensed to UNIVERSITY OF NORTH CAROLINA CHAPEL HILL - T&R, Site 0039466002.
+NOTE: This session is executing on the Linux 2.6.18-128.7.1.el5 platform.
+
+
+
+NOTE: SAS 9.1.3 Service Pack 4
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+      
+1          /* *************************************************************************/
+2          /* CREATED BY:      Jesse Blocher (UNC-Chapel Hill)
+3          /* MODIFIED BY:
+4          /* DATE CREATED:    October 2009
+5          /* PROG NAME:       get_thomson.sas
+6          /* Project:         MF Ownership Induces Correlations
+7          /* This File:       Pulls ownership data from Thomson
+8          /************************************************************************************/
+9          /* Datasets required to run:
+10          * firmnet.rdateYYMMDD		: monthly datasets from Thomson (WRDS)
+11          */
+12         
+13         /* Datasets Produced:
+14          *
+15          */
+16         
+17         %include 'firmnet_header.sas'; *header file with basic options and libraries;
+NOTE: Libref FIRMNET was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /smallfs/jabloche/firmnet
+NOTE: Libref FN_WORK was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /smallfs/jabloche/firmnet_work
+NOTE: Libref LOCAL was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /netscr/jabloche/FirmNetworks
+24         
+25         %macro transpose_matrix(keepvar = , YRMO =);
+26         	
+27         	
+28         	proc contents data = firmnet.rdate&YRMO;
+29         	run;
+30         	
+31         	
+32         	data var_matrix_data;
+33         		set firmnet.rdate&YRMO (keep = mgrno cusip &keepvar );
+34         	run;
+35         	
+36         	* code for transposing matrix - first sort it;
+37         	proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+38         	by mgrno cusip;
+39         	run;
+40         	
+41         	* Now, we need to transpose;
+42         	proc transpose data = mgrno_sorted out = firmnet.&keepvar._mat_&yrmo let;
+43         		by mgrno;
+44         		id cusip;
+45         	run;
+46         
+47         %mend transpose_matrix;
+48         
+49         * this macro gets the jobarray index to split it up, then runs the rest for each year;
+50         %macro runjob;
+51         	%let index = %sysget(LSB_JOBINDEX);
+52         	%let yr = %eval(2002 + &index);
+53         	
+54         	%do n = 1 %to 4;
+55         		%let mo = %eval(&n * 3);
+56         		%transpose_matrix(keepvar = block, yrmo = &yr.&mo);
+57         		%transpose_matrix(keepvar = pct_held, yrmo = &yr.&mo);
+58         	%end;
+59         
+60         %mend;
+61         
+62         %runjob;
+SYMBOLGEN:  Macro variable INDEX resolves to 1
+SYMBOLGEN:  Macro variable N resolves to 1
+SYMBOLGEN:  Macro variable YR resolves to 2003
+SYMBOLGEN:  Macro variable MO resolves to 3
+SYMBOLGEN:  Macro variable YRMO resolves to 20033
+MPRINT(TRANSPOSE_MATRIX):   proc contents data = firmnet.rdate20033;
+NOTE: Data file FIRMNET.RDATE20033.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.02 seconds
+      
+NOTE: The PROCEDURE CONTENTS printed page 1.
+
+MPRINT(TRANSPOSE_MATRIX):   data var_matrix_data;
+SYMBOLGEN:  Macro variable YRMO resolves to 20033
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+MPRINT(TRANSPOSE_MATRIX):   set firmnet.rdate20033 (keep = mgrno cusip block );
+NOTE: Data file FIRMNET.RDATE20033.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 520946 observations read from the data set FIRMNET.RDATE20033.
+NOTE: The data set WORK.VAR_MATRIX_DATA has 520946 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.43 seconds
+      cpu time            0.41 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * code for transposing matrix - first sort it;
+MPRINT(TRANSPOSE_MATRIX):   proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 520946 observations read from the data set WORK.VAR_MATRIX_DATA.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.MGRNO_SORTED has 520946 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.35 seconds
+      cpu time            0.32 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+SYMBOLGEN:  Macro variable YRMO resolves to 20033
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.block_mat_20033 let;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno;
+MPRINT(TRANSPOSE_MATRIX):   id cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 520946 observations read from the data set WORK.MGRNO_SORTED.
+NOTE: The data set FIRMNET.BLOCK_MAT_20033 has 1920 observations and 10398 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           12.77 seconds
+      cpu time            6.16 seconds
+      
+
+MPRINT(RUNJOB):  ;
+SYMBOLGEN:  Macro variable YR resolves to 2003
+SYMBOLGEN:  Macro variable MO resolves to 3
+SYMBOLGEN:  Macro variable YRMO resolves to 20033
+MPRINT(TRANSPOSE_MATRIX):   proc contents data = firmnet.rdate20033;
+NOTE: Data file FIRMNET.RDATE20033.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.21 seconds
+      cpu time            0.01 seconds
+      
+NOTE: The PROCEDURE CONTENTS printed page 2.
+
+MPRINT(TRANSPOSE_MATRIX):   data var_matrix_data;
+SYMBOLGEN:  Macro variable YRMO resolves to 20033
+SYMBOLGEN:  Macro variable KEEPVAR resolves to pct_held
+MPRINT(TRANSPOSE_MATRIX):   set firmnet.rdate20033 (keep = mgrno cusip pct_held );
+NOTE: Data file FIRMNET.RDATE20033.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 520946 observations read from the data set FIRMNET.RDATE20033.
+NOTE: The data set WORK.VAR_MATRIX_DATA has 520946 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.40 seconds
+      cpu time            0.39 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * code for transposing matrix - first sort it;
+MPRINT(TRANSPOSE_MATRIX):   proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 520946 observations read from the data set WORK.VAR_MATRIX_DATA.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.MGRNO_SORTED has 520946 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.33 seconds
+      cpu time            0.32 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to pct_held
+SYMBOLGEN:  Macro variable YRMO resolves to 20033
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.pct_held_mat_20033 let;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno;
+MPRINT(TRANSPOSE_MATRIX):   id cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 520946 observations read from the data set WORK.MGRNO_SORTED.
+NOTE: The data set FIRMNET.PCT_HELD_MAT_20033 has 1920 observations and 10398 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           10.09 seconds
+      cpu time            6.28 seconds
+      
+
+MPRINT(RUNJOB):  ;
+SYMBOLGEN:  Macro variable N resolves to 2
+SYMBOLGEN:  Macro variable YR resolves to 2003
+SYMBOLGEN:  Macro variable MO resolves to 6
+SYMBOLGEN:  Macro variable YRMO resolves to 20036
+MPRINT(TRANSPOSE_MATRIX):   proc contents data = firmnet.rdate20036;
+NOTE: Data file FIRMNET.RDATE20036.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.21 seconds
+      cpu time            0.00 seconds
+      
+NOTE: The PROCEDURE CONTENTS printed page 3.
+
+MPRINT(TRANSPOSE_MATRIX):   data var_matrix_data;
+SYMBOLGEN:  Macro variable YRMO resolves to 20036
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+MPRINT(TRANSPOSE_MATRIX):   set firmnet.rdate20036 (keep = mgrno cusip block );
+NOTE: Data file FIRMNET.RDATE20036.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 532665 observations read from the data set FIRMNET.RDATE20036.
+NOTE: The data set WORK.VAR_MATRIX_DATA has 532665 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           3.10 seconds
+      cpu time            0.41 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * code for transposing matrix - first sort it;
+MPRINT(TRANSPOSE_MATRIX):   proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 532665 observations read from the data set W
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+SYMBOLGEN:  Macro variable YRMO resolves to 20046
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.block_mat_20046 let;
+MPRINT(TRANSPOSE_MATRIX):   by 
+
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+SYMBOLGEN:  Macro variable YRMO resolves to 20076
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.block_mat_20076 let;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno;
+MPRINT(TRANSPOSE_MATRIX):   id cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 734355 observations read from the data set WORK.MGRNO_SORTED.
+NOTE: The data set FIRMNET.BLOCK_MAT_20076 has 2729 observations and 11958 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           11.75 seconds
+      cpu time            10.16 seconds
+      
+
+MPRINT(RUNJOB):  ;
+SYMBOLGEN:  Macro variable YR resolves to 2007
+SYMBOLGEN:  Macro variable MO resolves to 6
+SYMBOLGEN:  Macro variable YRMO resolves to 20076
+MPRINT(TRANSPOSE_MATRIX):   proc contents data = firmnet.rdate20076;
+NOTE: Data file FIRMNET.RDATE20076.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+NOTE: The PROCEDURE CONTENTS printed page 4.
+
+MPRINT(TRANSPOSE_MATRIX):   data var_matrix_data;
+SYMBOLGEN:  Macro variable YRMO resolves to 20076
+SYMBOLGEN:  Macro variable KEEPVAR resolves to pct_held
+MPRINT(TRANSPOSE_MATRIX):   set firmnet.rdate20076 (keep = mgrno cusip pct_held );
+NOTE: Data file FIRMNET.RDATE20076.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 734355 observations read from the data set FIRMNET.RDATE20076.
+NOTE: The data set WORK.VAR_MATRIX_DATA has 734355 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.58 seconds
+      cpu time            0.55 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * code for transposing matrix - first sort it;
+MPRINT(TRANSPOSE_MATRIX):   proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 734355 observations read from the data set WORK.VAR_MATRIX_DATA.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.MGRNO_SORTED has 734355 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.76 seconds
+      cpu time            0.49 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to pct_held
+SYMBOLGEN:  Macro variable YRMO resolves to 20076
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.pct_held_mat_20076 let;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno;
+MPRINT(TRANSPOSE_MATRIX):   id cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 734355 observations read from the data set WORK.MGRNO_SORTED.
+NOTE: The data set FIRMNET.PCT_HELD_MAT_20076 has 2729 observations and 11958 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           10.28 seconds
+      cpu time            9.39 seconds
+      
+
+MPRINT(RUNJOB):  ;
+SYMBOLGEN:  Macro variable N resolves to 3
+SYMBOLGEN:  Macro variable YR resolves to 2007
+SYMBOLGEN:  Macro variable MO resolves to 9
+SYMBOLGEN:  Macro variable YRMO resolves to 20079
+MPRINT(TRANSPOSE_MATRIX):   proc contents data = firmnet.rdate20079;
+NOTE: Data file FIRMNET.RDATE20079.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.00 seconds
+      
+NOTE: The PROCEDURE CONTENTS printed page 5.
+
+MPRINT(TRANSPOSE_MATRIX):   data var_matrix_data;
+SYMBOLGEN:  Macro variable YRMO resolves to 20079
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+MPRINT(TRANSPOSE_MATRIX):   set firmnet.rdate20079 (keep = mgrno cusip block );
+NOTE: Data file FIRMNET.RDATE20079.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 701781 observations read from the data set FIRMNET.RDATE20079.
+NOTE: The data set WORK.VAR_MATRIX_DATA has 701781 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           1.61 seconds
+      cpu time            0.53 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * code for transposing matrix - first sort it;
+MPRINT(TRANSPOSE_MATRIX):   proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 701781 observations read from the data set WORK.VAR_MATRIX_DATA.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.MGRNO_SORTED has 701781 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.49 seconds
+      cpu time            0.43 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+SYMBOLGEN:  Macro variable YRMO resolves to 20079
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.block_mat_20079 let;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno;
+MPRINT(TRANSPOSE_MATRIX):   id cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 701781 observations read from the data set WORK.MGRNO_SORTED.
+NOTE: The data set FIRMNET.BLOCK_MAT_20079 has 2717 observations and 10850 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           10.02 seconds
+      cpu time            8.48 seconds
+      
+
+MPRINT(RUNJOB):  ;
+SYMBOLGEN:  Macro variable YR resolves to 2007
+SYMBOLGEN:  Macro variable MO resolves to 9
+SYMBOLGEN:  Macro variable YRMO resolves to 20079
+MPRINT(TRANSPOSE_MATRIX):   proc contents data = firmnet.rdate20079;
+NOTE: Data file FIRMNET.RDATE20079.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+      
+NOTE: The PROCEDURE CONTENTS printed page 6.
+
+MPRINT(TRANSPOSE_MATRIX):   data var_matrix_data;
+SYMBOLGEN:  Macro variable YRMO resolves to 20079
+SYMBOLGEN:  Macro variable KEEPVAR resolves to pct_held
+MPRINT(TRANSPOSE_MATRIX):   set firmnet.rdate20079 (keep = mgrno cusip pct_held );
+NOTE: Data file FIRMNET.RDATE20079.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 701781 observations read from the data set FIRMNET.RDATE20079.
+NOTE: The data set WORK.VAR_MATRIX_DATA has 701781 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.66 seconds
+      cpu time            0.51 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * code for transposing matrix - first sort it;
+MPRINT(TRANSPOSE_MATRIX):   proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 701781 observations read from the data set WORK.VAR_MATRIX_DATA.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.MGRNO_SORTED has 701781 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.49 seconds
+      cpu time            0.44 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to pct_held
+SYMBOLGEN:  Macro variable YRMO resolves to 20079
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.pct_held_mat_20079 let;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno;
+MPRINT(TRANSPOSE_MATRIX):   id cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 701781 observations read from the data set WORK.MGRNO_SORTED.
+NOTE: The data set FIRMNET.PCT_HELD_MAT_20079 has 2717 observations and 10850 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           9.13 seconds
+      cpu time            8.07 seconds
+      
+
+MPRINT(RUNJOB):  ;
+SYMBOLGEN:  Macro variable N resolves to 4
+SYMBOLGEN:  Macro variable YR resolves to 2007
+SYMBOLGEN:  Macro variable MO resolves to 12
+SYMBOLGEN:  Macro variable YRMO resolves to 200712
+MPRINT(TRANSPOSE_MATRIX):   proc contents data = firmnet.rdate200712;
+NOTE: Data file FIRMNET.RDATE200712.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.01 seconds
+      
+NOTE: The PROCEDURE CONTENTS printed page 7.
+
+MPRINT(TRANSPOSE_MATRIX):   data var_matrix_data;
+SYMBOLGEN:  Macro variable YRMO resolves to 200712
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+MPRINT(TRANSPOSE_MATRIX):   set firmnet.rdate200712 (keep = mgrno cusip block );
+NOTE: Data file FIRMNET.RDATE200712.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 722344 observations read from the data set FIRMNET.RDATE200712.
+NOTE: The data set WORK.VAR_MATRIX_DATA has 722344 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           2.02 seconds
+      cpu time            0.54 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * code for transposing matrix - first sort it;
+MPRINT(TRANSPOSE_MATRIX):   proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 722344 observations read from the data set WORK.VAR_MATRIX_DATA.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.MGRNO_SORTED has 722344 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.49 seconds
+      cpu time            0.45 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to block
+SYMBOLGEN:  Macro variable YRMO resolves to 200712
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.block_mat_200712 let;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno;
+MPRINT(TRANSPOSE_MATRIX):   id cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 722344 observations read from the data set WORK.MGRNO_SORTED.
+NOTE: The data set FIRMNET.BLOCK_MAT_200712 has 2941 observations and 11021 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           9.23 seconds
+      cpu time            8.58 seconds
+      
+
+MPRINT(RUNJOB):  ;
+SYMBOLGEN:  Macro variable YR resolves to 2007
+SYMBOLGEN:  Macro variable MO resolves to 12
+SYMBOLGEN:  Macro variable YRMO resolves to 200712
+MPRINT(TRANSPOSE_MATRIX):   proc contents data = firmnet.rdate200712;
+NOTE: Data file FIRMNET.RDATE200712.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+NOTE: The PROCEDURE CONTENTS printed page 8.
+
+MPRINT(TRANSPOSE_MATRIX):   data var_matrix_data;
+SYMBOLGEN:  Macro variable YRMO resolves to 200712
+SYMBOLGEN:  Macro variable KEEPVAR resolves to pct_held
+MPRINT(TRANSPOSE_MATRIX):   set firmnet.rdate200712 (keep = mgrno cusip pct_held );
+NOTE: Data file FIRMNET.RDATE200712.DATA is in a format native to another host or the file encoding 
+      does not match the session encoding. Cross Environment Data Access will be used, which may 
+      require additional CPU resources and reduce performance.
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 722344 observations read from the data set FIRMNET.RDATE200712.
+NOTE: The data set WORK.VAR_MATRIX_DATA has 722344 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.53 seconds
+      cpu time            0.52 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * code for transposing matrix - first sort it;
+MPRINT(TRANSPOSE_MATRIX):   proc sort data = var_matrix_data out = mgrno_sorted nodupkey;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 722344 observations read from the data set WORK.VAR_MATRIX_DATA.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.MGRNO_SORTED has 722344 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.48 seconds
+      cpu time            0.46 seconds
+      
+
+MPRINT(TRANSPOSE_MATRIX):   * Now, we need to transpose;
+SYMBOLGEN:  Macro variable KEEPVAR resolves to pct_held
+SYMBOLGEN:  Macro variable YRMO resolves to 200712
+MPRINT(TRANSPOSE_MATRIX):   proc transpose data = mgrno_sorted out = firmnet.pct_held_mat_200712 
+let;
+MPRINT(TRANSPOSE_MATRIX):   by mgrno;
+MPRINT(TRANSPOSE_MATRIX):   id cusip;
+MPRINT(TRANSPOSE_MATRIX):   run;
+
+NOTE: There were 722344 observations read from the data set WORK.MGRNO_SORTED.
+NOTE: The data set FIRMNET.PCT_HELD_MAT_200712 has 2941 observations and 11021 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           8.82 seconds
+      cpu time            8.48 seconds
+      
+
+MPRINT(RUNJOB):  ;
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           1:37.18
+      cpu time            1:18.22
+      
+

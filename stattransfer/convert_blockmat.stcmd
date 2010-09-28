@@ -1,0 +1,10 @@
+// Author: Jesse Blocher
+// Date: December 2009
+// Project: Firm Network Corrlations - Price Synchronicity
+// This file: convert_blockmat.stcmd
+// Desc: Converts in bulks all of the quarterly return variables which are 
+// 		 currently in a day by cusip matrix.
+// Uses wildcards to convert all of them
+
+drop _NAME_, _LABEL_
+copy /smallfs/jabloche/firmnet/block_mat_*.sas7bdat matlab /smallfs/jabloche/firmnet/*.mat

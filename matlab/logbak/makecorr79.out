@@ -1,0 +1,124 @@
+Sender: LSF System <lsfadmin@bc01-n10>
+Subject: Job 606550[79]: <makecorr[71-90]> Exited
+
+Job <makecorr[71-90]> was submitted from host <bc13-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n10>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/matlab> was used as the working directory.
+Started at Sun Feb 28 09:28:24 2010
+Results reported at Sun Feb 28 09:30:44 2010
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with signal termination: Alarm clock.
+
+Resource usage summary:
+
+    CPU time   :    135.44 sec.
+    Max Memory :       580 MB
+    Max Swap   :     17434 MB
+
+    Max Processes  :         5
+    Max Threads    :        17
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Correlation Matrix Creation
+Reading file
+Data Loaded. Computing Correlation Matrix
+{??? Operation terminated by user during ==> corr at 246
+
+In ==> create_corr_matrices at 53
+[ret_corr ret_pval] = corr(s_twomode_retmat);
+} 
+>> Sender: LSF System <lsfadmin@bc17-n07>
+Subject: Job 606551[79]: <makecorr[79]> Done
+
+Job <makecorr[79]> was submitted from host <bc13-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc17-n07>, in queue <idle>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/matlab> was used as the working directory.
+Started at Sun Feb 28 09:32:19 2010
+Results reported at Sun Feb 28 12:09:39 2010
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :  11213.87 sec.
+    Max Memory :     16960 MB
+    Max Swap   :     34727 MB
+
+    Max Processes  :         5
+    Max Threads    :        32
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Correlation Matrix Creation
+Reading file
+Data Loaded. Computing Correlation Matrix
+  Columns 1 through 7
+
+    1.0000       NaN       NaN       NaN       NaN    0.1207   -0.0292
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+    0.1207       NaN       NaN       NaN       NaN    1.0000    0.0180
+   -0.0292       NaN       NaN       NaN       NaN    0.0180    1.0000
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+
+  Columns 8 through 10
+
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+
+saving normalized correlation matrix
+computing % negative and density
+Time Elapsed is 2 hours, 37 minutes, 16 seconds.
+>> 

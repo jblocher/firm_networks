@@ -1,0 +1,9 @@
+#!/bin/sh
+# High Memory Command
+#bsub -J "nw_stats[110-116]" -q week -o "nw_stats_cor_bool%I.out" -R mem32 -R RH5 matlab -nodisplay -nojvm -nosplash -r nw_stats
+bsub -J "nw_stats[100-109]" -q week -o "nw_stats_cor_bool%I.out" -R mem32 -R RH5 matlab -nodisplay -nojvm -nosplash -r nw_stats
+
+
+
+# Smaller test command - regular
+#bsub -J "nw_stats[1-72]" -q week -o "nw_stats%I.out"  -R RH5 matlab -nodisplay -nojvm -nosplash -r nw_stats

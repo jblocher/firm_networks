@@ -1,0 +1,57 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2008 The MathWorks, Inc.
+                         Version 7.7.0.471 (R2008b)
+                             September 17, 2008
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Test
+Sample of Imported Matrix
+  Columns 1 through 7
+
+    0.0001       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN    0.0110    0.0007    0.0156    0.0005    0.0027    0.0004
+       NaN    0.0065    0.0009       NaN       NaN       NaN       NaN
+    0.0000    0.0001    0.0000       NaN    0.0000       NaN    0.0000
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN    0.0008       NaN    0.0004       NaN    0.0000
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+
+  Columns 8 through 10
+
+       NaN       NaN       NaN
+    0.0029    0.0003    0.0459
+    0.0004       NaN    0.0677
+    0.0001       NaN    0.0003
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+       NaN       NaN       NaN
+    0.0004       NaN    0.0537
+       NaN       NaN       NaN
+
+iteration:1
+Writing file
+iteration:2
+Writing file
+iteration:3
+Writing file
+iteration:4
+Writing file
+iteration:5
+Writing file
+iteration:6
+Writing file
+iteration:7
+Writing file
+iteration:8
+Writing file
+iteration:9
+Writing file
+time:212.8183

@@ -1,0 +1,125 @@
+Sender: LSF System <lsfadmin@bc16-n11>
+Subject: Job 416121: <conv_cor49> Done
+
+Job <conv_cor49> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc16-n11>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 11:57:53 2009
+Results reported at Wed Dec 30 11:58:10 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_cor49.txt -o /smallfs/jabloche/fn_edge/el_cor49.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     10.11 sec.
+    Max Memory :         2 MB
+    Max Swap   :        25 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+..Sender: LSF System <lsfadmin@bc01-n10>
+Subject: Job 416141: <conv_cor49> Done
+
+Job <conv_cor49> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n10>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:13:28 2009
+Results reported at Wed Dec 30 12:13:54 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_cor49.txt -o /smallfs/jabloche/fn_edge/el_cor49.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      6.78 sec.
+    Max Memory :         2 MB
+    Max Swap   :        25 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+..Sender: LSF System <lsfadmin@bc01-n10>
+Subject: Job 416150: <conv_cor49> Done
+
+Job <conv_cor49> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n10>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:16:39 2009
+Results reported at Wed Dec 30 12:16:51 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_cor49.txt -o /smallfs/jabloche/fn_edge/el_cor49.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      6.53 sec.
+    Max Memory :         2 MB
+    Max Swap   :        25 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+..Sender: LSF System <lsfadmin@bc01-n03>
+Subject: Job 416322: <conv_cor49> Done
+
+Job <conv_cor49> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n03>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 15:00:35 2009
+Results reported at Wed Dec 30 15:01:28 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_cor49.txt -o /smallfs/jabloche/fn_edge/el_cor49.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      7.48 sec.
+    Max Memory :       153 MB
+    Max Swap   :       333 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+..

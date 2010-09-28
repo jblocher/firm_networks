@@ -1,0 +1,32 @@
+Sender: LSF System <lsfadmin@bc02-n09>
+Subject: Job 416340: <conv_cor67> Done
+
+Job <conv_cor67> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc02-n09>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 15:00:35 2009
+Results reported at Wed Dec 30 15:02:32 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_cor67.txt -o /smallfs/jabloche/fn_edge/el_cor67.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     12.61 sec.
+    Max Memory :       311 MB
+    Max Swap   :       515 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+...

@@ -1,0 +1,74 @@
+Sender: LSF System <lsfadmin@bc01-n04>
+Subject: Job 562511[1]: <makecorr[1-15]> Done
+
+Job <makecorr[1-15]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n04>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/matlab> was used as the working directory.
+Started at Thu Feb 18 08:31:27 2010
+Results reported at Thu Feb 18 10:27:46 2010
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   8964.12 sec.
+    Max Memory :     20637 MB
+    Max Swap   :     34734 MB
+
+    Max Processes  :         5
+    Max Threads    :        32
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Correlation Matrix Creation
+Reading file
+Data Loaded. Computing Correlation Matrix
+  Columns 1 through 7
+
+    1.0000    0.0753    0.5108    0.4116   -0.1074    0.2833    0.1400
+    0.0753    1.0000    0.1462    0.2575   -0.0888    0.0576    0.4541
+    0.5108    0.1462    1.0000    0.1924   -0.2472   -0.0005    0.3619
+    0.4116    0.2575    0.1924    1.0000    0.1543    0.3106    0.2924
+   -0.1074   -0.0888   -0.2472    0.1543    1.0000   -0.2793   -0.1092
+    0.2833    0.0576   -0.0005    0.3106   -0.2793    1.0000    0.1784
+    0.1400    0.4541    0.3619    0.2924   -0.1092    0.1784    1.0000
+    0.1693    0.0752    0.0116    0.2473    0.0732    0.0076    0.1596
+   -0.0398    0.1327    0.0625    0.3092    0.0115    0.2086    0.2520
+    0.3476    0.0138    0.0540    0.3537    0.0259    0.3234   -0.0341
+
+  Columns 8 through 10
+
+    0.1693   -0.0398    0.3476
+    0.0752    0.1327    0.0138
+    0.0116    0.0625    0.0540
+    0.2473    0.3092    0.3537
+    0.0732    0.0115    0.0259
+    0.0076    0.2086    0.3234
+    0.1596    0.2520   -0.0341
+    1.0000   -0.0883    0.1618
+   -0.0883    1.0000    0.1004
+    0.1618    0.1004    1.0000
+
+saving normalized correlation matrix
+computing % negative and density
+Time Elapsed is 1 hour, 56 minutes, 14 seconds.
+>> 

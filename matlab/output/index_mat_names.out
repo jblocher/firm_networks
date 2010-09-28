@@ -1,0 +1,95 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.8.0.347 (R2009a) 64-bit (glnxa64)
+                             February 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Display the name lists created
+
+pct_held_name =
+
+pct_held_mat_20033 
+pct_held_mat_20036 
+pct_held_mat_20039 
+pct_held_mat_200312
+pct_held_mat_20043 
+pct_held_mat_20046 
+pct_held_mat_20049 
+pct_held_mat_200412
+pct_held_mat_20053 
+pct_held_mat_20056 
+pct_held_mat_20059 
+pct_held_mat_200512
+pct_held_mat_20063 
+pct_held_mat_20066 
+pct_held_mat_20069 
+pct_held_mat_200612
+pct_held_mat_20073 
+pct_held_mat_20076 
+pct_held_mat_20079 
+pct_held_mat_200712
+pct_held_mat_20083 
+pct_held_mat_20086 
+pct_held_mat_20089 
+pct_held_mat_200812
+
+
+block_name =
+
+block_mat_20033 
+block_mat_20036 
+block_mat_20039 
+block_mat_200312
+block_mat_20043 
+block_mat_20046 
+block_mat_20049 
+block_mat_200412
+block_mat_20053 
+block_mat_20056 
+block_mat_20059 
+block_mat_200512
+block_mat_20063 
+block_mat_20066 
+block_mat_20069 
+block_mat_200612
+block_mat_20073 
+block_mat_20076 
+block_mat_20079 
+block_mat_200712
+block_mat_20083 
+block_mat_20086 
+block_mat_20089 
+block_mat_200812
+
+
+ret_name =
+
+yrqtr200301
+yrqtr200302
+yrqtr200303
+yrqtr200304
+yrqtr200401
+yrqtr200402
+yrqtr200403
+yrqtr200404
+yrqtr200501
+yrqtr200502
+yrqtr200503
+yrqtr200504
+yrqtr200601
+yrqtr200602
+yrqtr200603
+yrqtr200604
+yrqtr200701
+yrqtr200702
+yrqtr200703
+yrqtr200704
+yrqtr200801
+yrqtr200802
+yrqtr200803
+yrqtr200804
+

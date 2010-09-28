@@ -1,0 +1,64 @@
+Sender: LSF System <lsfadmin@bc04-n07>
+Subject: Job 416177: <conv_pct19> Exited
+
+Job <conv_pct19> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc04-n07>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:20:06 2009
+Results reported at Wed Dec 30 12:20:06 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_pct19.txt -o /smallfs/jabloche/fn_edge/el_pct19.bin -w
+------------------------------------------------------------
+
+Exited with exit code 126.
+
+Resource usage summary:
+
+    CPU time   :      0.06 sec.
+    Max Memory :         2 MB
+    Max Swap   :         7 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+/opt/lsf/common/etc/job_starter.sh: line 59: /netscr/jabloche/FirmNetworks/cLouvain/convert: cannot execute binary file
+Sender: LSF System <lsfadmin@bc02-n04>
+Subject: Job 416209: <conv_pct19> Done
+
+Job <conv_pct19> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc02-n04>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:35:35 2009
+Results reported at Wed Dec 30 12:38:00 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_pct19.txt -o /smallfs/jabloche/fn_edge/el_pct19.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     31.11 sec.
+    Max Memory :       654 MB
+    Max Swap   :       955 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+.....

@@ -1,0 +1,156 @@
+Sender: LSF System <lsfadmin@bc14-n11>
+Subject: Job 416122: <conv_pct1> Done
+
+Job <conv_pct1> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc14-n11>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 11:57:53 2009
+Results reported at Wed Dec 30 11:58:57 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_pct1.txt -o /smallfs/jabloche/fn_edge/el_pct1.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     49.94 sec.
+    Max Memory :       572 MB
+    Max Swap   :       888 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+....Sender: LSF System <lsfadmin@bc01-n08>
+Subject: Job 416147: <conv_pct1> Done
+
+Job <conv_pct1> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n08>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:14:47 2009
+Results reported at Wed Dec 30 12:16:27 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_pct1.txt -o /smallfs/jabloche/fn_edge/el_pct1.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     25.97 sec.
+    Max Memory :       572 MB
+    Max Swap   :       888 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+....Sender: LSF System <lsfadmin@bc16-n11>
+Subject: Job 416154: <conv_pct1> Done
+
+Job <conv_pct1> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc16-n11>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:17:16 2009
+Results reported at Wed Dec 30 12:18:15 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_pct1.txt -o /smallfs/jabloche/fn_edge/el_pct1.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     41.47 sec.
+    Max Memory :       443 MB
+    Max Swap   :       753 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+....Sender: LSF System <lsfadmin@bc01-n08>
+Subject: Job 416159: <conv_pct1> Done
+
+Job <conv_pct1> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n08>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:20:00 2009
+Results reported at Wed Dec 30 12:21:11 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_pct1.txt -o /smallfs/jabloche/fn_edge/el_pct1.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     26.26 sec.
+    Max Memory :       572 MB
+    Max Swap   :       888 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+....Sender: LSF System <lsfadmin@bc01-n12>
+Subject: Job 416191: <conv_pct1> Done
+
+Job <conv_pct1> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n12>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:35:29 2009
+Results reported at Wed Dec 30 12:37:52 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_pct1.txt -o /smallfs/jabloche/fn_edge/el_pct1.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     26.74 sec.
+    Max Memory :       572 MB
+    Max Swap   :       888 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+....

@@ -1,0 +1,17 @@
+// Author: Jesse Blocher
+// Date: September 2010
+// Project: Firm Network Corrlations - Market interconnectedness. Whatever
+// This file: generate_convert_varlist.stcmd
+// Desc: pulls varlist from SAS files so we can get CUSIPs attached to matrices later
+// Uses wildcards to convert all of them
+//
+// to run this program, run this:
+// bsub -q week -R Stattransfer -o <outfile>.out st <filename>.stcmd
+
+// vars /largefs/jabloche/firmnet/yrqtr198001.sas7bdat varlist198001.txt
+vars /largefs/jabloche/firmnet/yrqtr*.sas7bdat varlist*.txt
+quit
+
+//drop _NAME_, _LABEL_
+//copy /smallfs/jabloche/firmnet/yrqtr*.sas7bdat matlab /smallfs/jabloche/firmnet/*.mat
+

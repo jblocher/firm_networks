@@ -1,0 +1,20 @@
+#!/bin/bash
+#grep ^[0-9] filename.mod > filename.tree
+# to extract tree info as before, with last line containing final modularity. The grep command will get all numbers that start with the digits 0 through 9
+# The very last line is the modularity score, prior to that is the modularity iterations, each one starting with 0
+count=1
+fn_path='/netscr/jabloche/FirmNetworks/cLouvain/'
+while [ $count -lt 25 ]
+do
+	echo $count
+	blknum=`expr $count + 24`
+	cornum=`expr $count + 48`
+	echo "grep ${count}"
+	grep ^[0-9] ${fn_path}commty_blk${blknum}.out > ${fn_path}num_blk${blknum}.txt
+	grep ^[0-9] ${fn_path}commty_cor${cornum}.out > ${fn_path}num_cor${cornum}.txt
+	grep ^[0-9] ${fn_path}commty_pct${count}.out > ${fn_path}num_pct${count}.txt
+
+    count=`expr $count + 1`
+done
+
+

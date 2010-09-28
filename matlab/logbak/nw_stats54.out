@@ -1,0 +1,136 @@
+Sender: LSF System <lsfadmin@bc09-n09>
+Subject: Job 583055[54]: <nw_stats[29,51-75]> Exited
+
+Job <nw_stats[29,51-75]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc09-n09>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/matlab> was used as the working directory.
+Started at Sun Feb 21 19:19:00 2010
+Results reported at Mon Feb 22 11:27:55 2010
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -nojvm -nosplash -r nw_stats
+------------------------------------------------------------
+
+Exited with exit code 137.
+
+Resource usage summary:
+
+    CPU time   :  57894.75 sec.
+    Max Memory :      2053 MB
+    Max Swap   :      5812 MB
+
+    Max Processes  :         6
+    Max Threads    :        13
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Matrix Statistics for type_data: bool_blk
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_54
+running matrix statistics functions
+Completed getNetworkProfile
+Time Elapsed is 4 seconds.
+Now getting components
+Done. Computed connected components. Saving output
+Time Elapsed is 0.97331 seconds
+Number of Connected Components: 1
+Time Elapsed is 0.89442 seconds
+Size of Giant Component: 5862
+Ratio of Size of Giant Component to whole Matrix: 0.804
+Ratio of Isolates to whole Matrix: 0.196
+Time Elapsed is 3 seconds.
+pearson_r: -0.0088652
+Time Elapsed is 0.39298 seconds
+Density of Cluster: 0.2138
+Time Elapsed is 1 second.
+Diameter of Cluster: 4
+Avg Path Length: 1.1624
+Time Elapsed is 9 hours, 29 minutes, 47 seconds.
+Computing Degree Distribution...
+Done. Time Elapsed is 2 seconds.
+Computing Centrality measures...Eigenvector
+Done. Time Elapsed is 15 seconds.
+Computing Centrality measures...Closeness
+Done. Time Elapsed is 4 hours, 41 minutes, 4 seconds.
+Computing Average neighbor degree
+Time Elapsed is 6 minutes, 48 seconds.
+Computing Centrality measures...Betweenness
+Time Elapsed is 29 minutes, 26 seconds.
+Computing Clustering Coefficents.
+Time Elapsed is 2.3e-05 seconds
+is Simple:1
+is Connected:0
+is Regular:0
+is Tree:0
+is Complete:0
+Completed IS descriptions
+Finished. Total Program Time Elapsed is 16 hours, 8 minutes, 39 seconds.
+Your MATLAB session has timed out.  All license keys have been returned.
+>> 
+------------------------------------------------------------------------
+       Segmentation violation detected at Mon Feb 22 11:27:54 2010
+------------------------------------------------------------------------
+
+Configuration:
+  MATLAB Version:   7.9.0.529 (R2009b)
+FEATURE "MATLAB" could not be read.
+  MATLAB License:   UNKNOWN
+  Operating System: Linux 2.6.18-164.11.1.el5 #1 SMP Wed Jan 6 13:26:04 EST 2010 x86_64
+  GNU C Library:    2.5 stable
+  Processor ID:     x86 Family 15 Model 4 Stepping 3, GenuineIntel
+  Virtual Machine:  Java is not enabled
+  Default Encoding:  ISO-8859-1
+
+Fault Count: 1
+
+Register State:
+  rax = 0000000000e60628   rbx = 0000000000e27218
+  rcx = 0000000000000000   rdx = 000000000000006e
+  rbp = 00002aab08ae9090   rsi = 00002aab08ae90d0
+  rdi = 0000000000e605f0   rsp = 00002aab08ae9078
+   r8 = 0000000000f17d20    r9 = 0000000000000000
+  r10 = 0000000000006969   r11 = 0000000000000206
+  r12 = 00002b506047f930   r13 = 00002aab08aea000
+  r14 = 0000000000000000   r15 = 0000000000001000
+  rip = 0000000000000000   flg = 0000000000010206
+
+Stack Trace:
+  [0] 0x0000000000000000(0x4b82b07b, 0x2aab08ae90d0, 0x2aab08ae90f0, 0x2b506016fb8e)
+  [1] libmwservices.so:MathWorks::lmgrTimerObject::LMTimer::isMLBusy(long*)(0x2b505f9c9288, 0x00f17cd0, 0x4b82b08a, 0x00f17cd0) + 17 bytes
+  [2] libmwservices.so:MathWorks::lmgrTimerObject::LMTimer::doPeriodicChecks()(0, 0, 0x2aab08ae9120, 0x2b506016fd70) + 46 bytes
+  [3] libmwservices.so:MathWorks::lmgrTimerObject::LMTimer::startTimer()(0, 0x35f4206617, 0, 0x2aab08ae9940) + 46 bytes
+  [4] libmwservices.so:MathWorks::lmgrTimerObject::LMTimer::LicManagerTimerThread(void*)(0, 0x2aab08ae9940, 0, 0) + 16 bytes
+
+Please follow these steps to report this problem to The MathWorks so we
+have the best chance of correcting it:
+
+The next time MATLAB is launched under typical usage, a dialog box will
+open to help you send the error log to The MathWorks. Alternatively, you
+can send an e-mail to segv@mathworks.com with the following file attached:
+    /netscr/jabloche/matlab_crash_dump.26930
+
+If the problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/ts/help_request_1.html
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.
+
+
+MATLAB is exiting because of fatal error
+/afs/isis/pkg/matlab-2009b/matlab: line 11: 26930 Killed                  /afs/isis.unc.edu/pkg/matlab-2009b/.install/amd64_linux26_rh5/bin/matlab.exe $*

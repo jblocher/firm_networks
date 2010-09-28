@@ -1,0 +1,187 @@
+Sender: LSF System <lsfadmin@bc01-n12>
+Subject: Job 416017: <convert_blk${blknum}> Done
+
+Job <convert_blk${blknum}> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n12>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 11:44:47 2009
+Results reported at Wed Dec 30 11:45:27 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_blk25.txt -o /smallfs/jabloche/fn_edge/el_blk25.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     10.13 sec.
+    Max Memory :       123 MB
+    Max Swap   :       301 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+...Sender: LSF System <lsfadmin@bc14-n10>
+Subject: Job 416022: <convert_blk25> Done
+
+Job <convert_blk25> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc14-n10>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 11:46:26 2009
+Results reported at Wed Dec 30 11:46:48 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_blk25.txt -o /smallfs/jabloche/fn_edge/el_blk25.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     15.74 sec.
+    Max Memory :         2 MB
+    Max Swap   :        26 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+...Sender: LSF System <lsfadmin@bc16-n05>
+Subject: Job 416120: <conv_blk25> Done
+
+Job <conv_blk25> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc16-n05>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 11:57:53 2009
+Results reported at Wed Dec 30 11:58:16 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_blk25.txt -o /smallfs/jabloche/fn_edge/el_blk25.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     15.08 sec.
+    Max Memory :         2 MB
+    Max Swap   :        26 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+...Sender: LSF System <lsfadmin@bc14-n10>
+Subject: Job 416144: <conv_blk25> Done
+
+Job <conv_blk25> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc14-n10>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:14:25 2009
+Results reported at Wed Dec 30 12:14:47 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_blk25.txt -o /smallfs/jabloche/fn_edge/el_blk25.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     16.14 sec.
+    Max Memory :         2 MB
+    Max Swap   :        26 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+...Sender: LSF System <lsfadmin@bc14-n10>
+Subject: Job 416152: <conv_blk25> Done
+
+Job <conv_blk25> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc14-n10>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 12:17:00 2009
+Results reported at Wed Dec 30 12:17:21 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_blk25.txt -o /smallfs/jabloche/fn_edge/el_blk25.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     15.50 sec.
+    Max Memory :         2 MB
+    Max Swap   :        26 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+...Sender: LSF System <lsfadmin@bc09-n11>
+Subject: Job 416346: <conv_blk25> Done
+
+Job <conv_blk25> was submitted from host <bc14-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc09-n11>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/cLouvain> was used as the working directory.
+Started at Wed Dec 30 15:00:40 2009
+Results reported at Wed Dec 30 15:01:57 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/netscr/jabloche/FirmNetworks/cLouvain/convert -i /smallfs/jabloche/fn_edge/el_blk25.txt -o /smallfs/jabloche/fn_edge/el_blk25.bin -w
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     21.21 sec.
+    Max Memory :       229 MB
+    Max Swap   :       414 MB
+
+    Max Processes  :         4
+    Max Threads    :         4
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+...

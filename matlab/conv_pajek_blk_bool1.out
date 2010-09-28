@@ -1,0 +1,52 @@
+Sender: LSF System <lsfadmin@bc01-n12>
+Subject: Job 816392[1]: <pajek[1,40,80,116,119]> Done
+
+Job <pajek[1,40,80,116,119]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n12>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/matlab> was used as the working directory.
+Started at Thu Apr  8 20:58:23 2010
+Results reported at Thu Apr  8 20:59:13 2010
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -nojvm -nosplash -r convert_pajek
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     46.32 sec.
+    Max Memory :       109 MB
+    Max Swap   :      6704 MB
+
+    Max Processes  :         6
+    Max Threads    :        25
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Pajek Conversion for type_data: bool_blk
+Loading Adj Mat
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_1
+
+ans =
+
+     0
+
+Finished. Total Program Time Elapsed is 47 seconds.
+>> 

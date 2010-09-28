@@ -1,0 +1,9 @@
+YEAR           
+QTR            
+DATE           // Date of Observation
+_NAME_         // NAME OF FORMER VARIABLE
+_LABEL_        // LABEL OF FORMER VARIABLE
+  
+txtYr          
+txtQint        
+txtQ           

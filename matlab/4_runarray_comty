@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bsub -J "comty[1]" -q week -o "comty_blk_bool%I.out"  -R mem32 matlab -nodisplay -nojvm -nosplash -r compute_louvain_comm

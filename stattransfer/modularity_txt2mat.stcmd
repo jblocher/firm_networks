@@ -1,0 +1,10 @@
+// Author: Jesse Blocher
+// Date: January 2010
+// Project: Firm Network Corrlations - Price Synchronicity
+// This file: modularity_txt2mat.stcmd
+// Desc: Converts modularity output from text to matlab
+// Uses wildcards to convert all of them
+
+//copy /netscr/jabloche/FirmNetworks/cLouvain/num_cor*.txt matlab /smallfs/jabloche/firmnet/num_cor*.mat
+copy /netscr/jabloche/FirmNetworks/cLouvain/num_blk*.txt matlab /smallfs/jabloche/firmnet/num_blk*.mat
+copy /netscr/jabloche/FirmNetworks/cLouvain/num_pct*.txt matlab /smallfs/jabloche/firmnet/num_pct*.mat

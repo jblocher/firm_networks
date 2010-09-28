@@ -1,0 +1,3 @@
+// simple Stat Transfer Command File
+drop cusip, _NAME
+copy /smallfs/jabloche/firmnet_work/twomode_fund_cusip.sas7bdat matlab /smallfs/jabloche/firmnet_work/twomode_fund_cusip_cmdtest.mat

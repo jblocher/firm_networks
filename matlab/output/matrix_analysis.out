@@ -1,0 +1,26 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.8.0.347 (R2009a) 64-bit (glnxa64)
+                             February 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Matrix Statistics
+Reading file
+running matrix statistics functions
+Number of Components:1
+Time Elapsed (sec):111049.8374
+Size of Giant Component:8852
+Ratio of Size of Giant Component to whole Matrix:0.84854
+Time Elapsed (sec):223246.0482
+Ratio of Isolates to whole Matrix:0.15146
+Time Elapsed (sec):223265.8294
+pearson_r:0.038494
+Time Elapsed (sec):223268.2141
+Cluster Coeff:0.73517
+Time Elapsed (sec):471722.0641
+Density of Cluster:0.014776
+Time Elapsed (sec):471746.2846

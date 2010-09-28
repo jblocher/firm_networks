@@ -1,0 +1,41 @@
+#!/bin/bash
+# Shell script to loop through and convert all of the text files to .bin files for Louvain Community Detection
+if [ $# -ne 1 ]
+then
+    echo "Error in $0 - Invalid Argument Count"
+    echo "Syntax: $0 type"
+    echo "where type 3 letters: cor, pct, or blk"
+    exit
+fi
+count=1
+fn_path='/smallfs/jabloche/fn_edge/'
+louvain_path='/netscr/jabloche/FirmNetworks/cLouvain/'
+# need RH5 to get 64 bit architecture. Won't run on blade or RH4
+bcommand='bsub -q week -R RH5 '
+type=$1
+while [ $count -lt 25 ]
+do
+	
+	echo $count
+	if 
+		[ $type = 'cor' ]
+	then
+		num=`expr $count + 48`
+	elif
+		[ $type = 'blk' ]
+	then
+		num=`expr $count + 24`
+	elif
+		[ $type = 'pct' ]
+	then
+		num=${count}
+	else
+		echo 'No valid type'
+	fi
+	
+	jname="comm_${type}${num}"
+	echo "Submitted $jname " 
+	$bcommand -J "${jname}" -o ${louvain_path}commty_${type}${num}.out ${louvain_path}community ${fn_path}el_${type}${num}.bin -l -1 -w > ${fn_path}el_${type}${num}.tree
+	
+    count=`expr $count + 1`
+done

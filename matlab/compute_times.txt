@@ -1,0 +1,27 @@
+Network Profile - all very fast - total of 3 seconds on large network
+- density
+- Number of edges, nodes
+- average degree
+
+Component Details
+fast:
+- Connected components
+- Giant component
+- ratios, isolates, etc.
+- Pearson r
+- Cluster Density
+
+slow:
+- Diameter
+- Average Path Length
+
+Node Details
+fast:
+- Degree Distribution
+- Eig Centrality
+- Clustering Coefficients
+
+slow:
+- Closeness Centrality
+- Average Neighbor Degree
+- Betweenness Centrality

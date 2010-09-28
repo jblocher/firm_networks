@@ -1,0 +1,83 @@
+Sender: LSF System <lsfadmin@bc14-n10>
+Subject: Job 564062[17]: <nw_stats[3-50]> Done
+
+Job <nw_stats[3-50]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc14-n10>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/matlab> was used as the working directory.
+Started at Fri Feb 19 09:46:22 2010
+Results reported at Fri Feb 19 10:19:03 2010
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -nojvm -nosplash -r nw_stats
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1937.36 sec.
+    Max Memory :      1256 MB
+    Max Swap   :      7882 MB
+
+    Max Processes  :         6
+    Max Threads    :        33
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Matrix Statistics for type_data: bool_blk
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_17
+running matrix statistics functions
+Completed getNetworkProfile
+Time Elapsed is 1 second.
+Now getting components
+Done. Computed connected components. Saving output
+Time Elapsed is 0.19763 seconds
+Number of Connected Components: 2
+Time Elapsed is 0.16798 seconds
+Size of Giant Component: 3910
+Ratio of Size of Giant Component to whole Matrix: 0.74976
+Ratio of Isolates to whole Matrix: 0.24986
+Time Elapsed is 0.74124 seconds
+pearson_r: 0.014428
+Time Elapsed is 0.088852 seconds
+Density of Cluster: 0.1197
+Time Elapsed is 0.38606 seconds
+Diameter of Cluster: 4
+Avg Path Length: 1.0799
+Time Elapsed is 14 minutes, 27 seconds.
+Computing Degree Distribution...
+Done. Time Elapsed is 0.62299 seconds
+Computing Centrality measures...Eigenvector
+Done. Time Elapsed is 2 seconds.
+Computing Centrality measures...Closeness
+Done. Time Elapsed is 6 minutes, 16 seconds.
+Computing Average neighbor degree
+Time Elapsed is 1 minute, 15 seconds.
+Computing Centrality measures...Betweenness
+Time Elapsed is 3 minutes, 54 seconds.
+Computing Clustering Coefficents.
+Time Elapsed is 1.9e-05 seconds
+is Simple:1
+is Connected:0
+is Regular:0
+is Tree:0
+is Complete:0
+Completed IS descriptions
+Finished. Total Program Time Elapsed is 32 minutes, 17 seconds.
+>> 

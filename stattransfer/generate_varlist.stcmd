@@ -1,0 +1,130 @@
+
+// Author: Jesse Blocher
+// Date: September 2010
+// Project: Firm Network Corrlations - Market interconnectedness. Whatever
+// This file: generate_convert_varlist.stcmd
+// Desc: pulls varlist from SAS files so we can get CUSIPs attached to matrices later
+// Uses wildcards to convert all of them
+//
+// to run this program, run this:
+// bsub -q week -R Stattransfer -o <outfile>.out st <filename>.stcmd
+
+
+vars /largefs/jabloche/firmnet/yrqtr198001.sas7bdat varlist198001.txt 
+vars /largefs/jabloche/firmnet/yrqtr198002.sas7bdat varlist198002.txt 
+vars /largefs/jabloche/firmnet/yrqtr198003.sas7bdat varlist198003.txt 
+vars /largefs/jabloche/firmnet/yrqtr198004.sas7bdat varlist198004.txt 
+vars /largefs/jabloche/firmnet/yrqtr198101.sas7bdat varlist198101.txt 
+vars /largefs/jabloche/firmnet/yrqtr198102.sas7bdat varlist198102.txt 
+vars /largefs/jabloche/firmnet/yrqtr198103.sas7bdat varlist198103.txt 
+vars /largefs/jabloche/firmnet/yrqtr198104.sas7bdat varlist198104.txt 
+vars /largefs/jabloche/firmnet/yrqtr198201.sas7bdat varlist198201.txt 
+vars /largefs/jabloche/firmnet/yrqtr198202.sas7bdat varlist198202.txt 
+vars /largefs/jabloche/firmnet/yrqtr198203.sas7bdat varlist198203.txt 
+vars /largefs/jabloche/firmnet/yrqtr198204.sas7bdat varlist198204.txt 
+vars /largefs/jabloche/firmnet/yrqtr198301.sas7bdat varlist198301.txt 
+vars /largefs/jabloche/firmnet/yrqtr198302.sas7bdat varlist198302.txt 
+vars /largefs/jabloche/firmnet/yrqtr198303.sas7bdat varlist198303.txt 
+vars /largefs/jabloche/firmnet/yrqtr198304.sas7bdat varlist198304.txt 
+vars /largefs/jabloche/firmnet/yrqtr198401.sas7bdat varlist198401.txt 
+vars /largefs/jabloche/firmnet/yrqtr198402.sas7bdat varlist198402.txt 
+vars /largefs/jabloche/firmnet/yrqtr198403.sas7bdat varlist198403.txt 
+vars /largefs/jabloche/firmnet/yrqtr198404.sas7bdat varlist198404.txt 
+vars /largefs/jabloche/firmnet/yrqtr198501.sas7bdat varlist198501.txt 
+vars /largefs/jabloche/firmnet/yrqtr198502.sas7bdat varlist198502.txt 
+vars /largefs/jabloche/firmnet/yrqtr198503.sas7bdat varlist198503.txt 
+vars /largefs/jabloche/firmnet/yrqtr198504.sas7bdat varlist198504.txt 
+vars /largefs/jabloche/firmnet/yrqtr198601.sas7bdat varlist198601.txt 
+vars /largefs/jabloche/firmnet/yrqtr198602.sas7bdat varlist198602.txt 
+vars /largefs/jabloche/firmnet/yrqtr198603.sas7bdat varlist198603.txt 
+vars /largefs/jabloche/firmnet/yrqtr198604.sas7bdat varlist198604.txt 
+vars /largefs/jabloche/firmnet/yrqtr198701.sas7bdat varlist198701.txt 
+vars /largefs/jabloche/firmnet/yrqtr198702.sas7bdat varlist198702.txt 
+vars /largefs/jabloche/firmnet/yrqtr198703.sas7bdat varlist198703.txt 
+vars /largefs/jabloche/firmnet/yrqtr198704.sas7bdat varlist198704.txt 
+vars /largefs/jabloche/firmnet/yrqtr198801.sas7bdat varlist198801.txt 
+vars /largefs/jabloche/firmnet/yrqtr198802.sas7bdat varlist198802.txt 
+vars /largefs/jabloche/firmnet/yrqtr198803.sas7bdat varlist198803.txt 
+vars /largefs/jabloche/firmnet/yrqtr198804.sas7bdat varlist198804.txt 
+vars /largefs/jabloche/firmnet/yrqtr198901.sas7bdat varlist198901.txt 
+vars /largefs/jabloche/firmnet/yrqtr198902.sas7bdat varlist198902.txt 
+vars /largefs/jabloche/firmnet/yrqtr198903.sas7bdat varlist198903.txt 
+vars /largefs/jabloche/firmnet/yrqtr198904.sas7bdat varlist198904.txt 
+vars /largefs/jabloche/firmnet/yrqtr199001.sas7bdat varlist199001.txt 
+vars /largefs/jabloche/firmnet/yrqtr199002.sas7bdat varlist199002.txt 
+vars /largefs/jabloche/firmnet/yrqtr199003.sas7bdat varlist199003.txt 
+vars /largefs/jabloche/firmnet/yrqtr199004.sas7bdat varlist199004.txt 
+vars /largefs/jabloche/firmnet/yrqtr199101.sas7bdat varlist199101.txt 
+vars /largefs/jabloche/firmnet/yrqtr199102.sas7bdat varlist199102.txt 
+vars /largefs/jabloche/firmnet/yrqtr199103.sas7bdat varlist199103.txt 
+vars /largefs/jabloche/firmnet/yrqtr199104.sas7bdat varlist199104.txt 
+vars /largefs/jabloche/firmnet/yrqtr199201.sas7bdat varlist199201.txt 
+vars /largefs/jabloche/firmnet/yrqtr199202.sas7bdat varlist199202.txt 
+vars /largefs/jabloche/firmnet/yrqtr199203.sas7bdat varlist199203.txt 
+vars /largefs/jabloche/firmnet/yrqtr199204.sas7bdat varlist199204.txt 
+vars /largefs/jabloche/firmnet/yrqtr199301.sas7bdat varlist199301.txt 
+vars /largefs/jabloche/firmnet/yrqtr199302.sas7bdat varlist199302.txt 
+vars /largefs/jabloche/firmnet/yrqtr199303.sas7bdat varlist199303.txt 
+vars /largefs/jabloche/firmnet/yrqtr199304.sas7bdat varlist199304.txt 
+vars /largefs/jabloche/firmnet/yrqtr199401.sas7bdat varlist199401.txt 
+vars /largefs/jabloche/firmnet/yrqtr199402.sas7bdat varlist199402.txt 
+vars /largefs/jabloche/firmnet/yrqtr199403.sas7bdat varlist199403.txt 
+vars /largefs/jabloche/firmnet/yrqtr199404.sas7bdat varlist199404.txt 
+vars /largefs/jabloche/firmnet/yrqtr199501.sas7bdat varlist199501.txt 
+vars /largefs/jabloche/firmnet/yrqtr199502.sas7bdat varlist199502.txt 
+vars /largefs/jabloche/firmnet/yrqtr199503.sas7bdat varlist199503.txt 
+vars /largefs/jabloche/firmnet/yrqtr199504.sas7bdat varlist199504.txt 
+vars /largefs/jabloche/firmnet/yrqtr199601.sas7bdat varlist199601.txt 
+vars /largefs/jabloche/firmnet/yrqtr199602.sas7bdat varlist199602.txt 
+vars /largefs/jabloche/firmnet/yrqtr199603.sas7bdat varlist199603.txt 
+vars /largefs/jabloche/firmnet/yrqtr199604.sas7bdat varlist199604.txt 
+vars /largefs/jabloche/firmnet/yrqtr199701.sas7bdat varlist199701.txt 
+vars /largefs/jabloche/firmnet/yrqtr199702.sas7bdat varlist199702.txt 
+vars /largefs/jabloche/firmnet/yrqtr199703.sas7bdat varlist199703.txt 
+vars /largefs/jabloche/firmnet/yrqtr199704.sas7bdat varlist199704.txt 
+vars /largefs/jabloche/firmnet/yrqtr199801.sas7bdat varlist199801.txt 
+vars /largefs/jabloche/firmnet/yrqtr199802.sas7bdat varlist199802.txt 
+vars /largefs/jabloche/firmnet/yrqtr199803.sas7bdat varlist199803.txt 
+vars /largefs/jabloche/firmnet/yrqtr199804.sas7bdat varlist199804.txt 
+vars /largefs/jabloche/firmnet/yrqtr199901.sas7bdat varlist199901.txt 
+vars /largefs/jabloche/firmnet/yrqtr199902.sas7bdat varlist199902.txt 
+vars /largefs/jabloche/firmnet/yrqtr199903.sas7bdat varlist199903.txt 
+vars /largefs/jabloche/firmnet/yrqtr199904.sas7bdat varlist199904.txt 
+vars /largefs/jabloche/firmnet/yrqtr200001.sas7bdat varlist200001.txt 
+vars /largefs/jabloche/firmnet/yrqtr200002.sas7bdat varlist200002.txt 
+vars /largefs/jabloche/firmnet/yrqtr200003.sas7bdat varlist200003.txt 
+vars /largefs/jabloche/firmnet/yrqtr200004.sas7bdat varlist200004.txt 
+vars /largefs/jabloche/firmnet/yrqtr200101.sas7bdat varlist200101.txt 
+vars /largefs/jabloche/firmnet/yrqtr200102.sas7bdat varlist200102.txt 
+vars /largefs/jabloche/firmnet/yrqtr200103.sas7bdat varlist200103.txt 
+vars /largefs/jabloche/firmnet/yrqtr200104.sas7bdat varlist200104.txt 
+vars /largefs/jabloche/firmnet/yrqtr200201.sas7bdat varlist200201.txt 
+vars /largefs/jabloche/firmnet/yrqtr200202.sas7bdat varlist200202.txt 
+vars /largefs/jabloche/firmnet/yrqtr200203.sas7bdat varlist200203.txt 
+vars /largefs/jabloche/firmnet/yrqtr200204.sas7bdat varlist200204.txt 
+vars /largefs/jabloche/firmnet/yrqtr200301.sas7bdat varlist200301.txt 
+vars /largefs/jabloche/firmnet/yrqtr200302.sas7bdat varlist200302.txt 
+vars /largefs/jabloche/firmnet/yrqtr200303.sas7bdat varlist200303.txt 
+vars /largefs/jabloche/firmnet/yrqtr200304.sas7bdat varlist200304.txt 
+vars /largefs/jabloche/firmnet/yrqtr200401.sas7bdat varlist200401.txt 
+vars /largefs/jabloche/firmnet/yrqtr200402.sas7bdat varlist200402.txt 
+vars /largefs/jabloche/firmnet/yrqtr200403.sas7bdat varlist200403.txt 
+vars /largefs/jabloche/firmnet/yrqtr200404.sas7bdat varlist200404.txt 
+vars /largefs/jabloche/firmnet/yrqtr200501.sas7bdat varlist200501.txt 
+vars /largefs/jabloche/firmnet/yrqtr200502.sas7bdat varlist200502.txt 
+vars /largefs/jabloche/firmnet/yrqtr200503.sas7bdat varlist200503.txt 
+vars /largefs/jabloche/firmnet/yrqtr200504.sas7bdat varlist200504.txt 
+vars /largefs/jabloche/firmnet/yrqtr200601.sas7bdat varlist200601.txt 
+vars /largefs/jabloche/firmnet/yrqtr200602.sas7bdat varlist200602.txt 
+vars /largefs/jabloche/firmnet/yrqtr200603.sas7bdat varlist200603.txt 
+vars /largefs/jabloche/firmnet/yrqtr200604.sas7bdat varlist200604.txt 
+vars /largefs/jabloche/firmnet/yrqtr200701.sas7bdat varlist200701.txt 
+vars /largefs/jabloche/firmnet/yrqtr200702.sas7bdat varlist200702.txt 
+vars /largefs/jabloche/firmnet/yrqtr200703.sas7bdat varlist200703.txt 
+vars /largefs/jabloche/firmnet/yrqtr200704.sas7bdat varlist200704.txt 
+vars /largefs/jabloche/firmnet/yrqtr200801.sas7bdat varlist200801.txt 
+vars /largefs/jabloche/firmnet/yrqtr200802.sas7bdat varlist200802.txt 
+vars /largefs/jabloche/firmnet/yrqtr200803.sas7bdat varlist200803.txt 
+vars /largefs/jabloche/firmnet/yrqtr200804.sas7bdat varlist200804.txt 
+
+quit 

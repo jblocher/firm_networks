@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bsub -J "pajek[1,40,80,116,119]" -q week -o "conv_pajek_blk_bool%I.out"  -R mem32 matlab -nodisplay -nojvm -nosplash -r convert_pajek

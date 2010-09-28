@@ -1,0 +1,155 @@
+Sender: LSF System <lsfadmin@bc16-n01>
+Subject: Job 715087[5]: <transmat[1-6]> Exited
+
+Job <transmat[1-6]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc16-n01>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/sas> was used as the working directory.
+Started at Wed Nov 25 10:47:16 2009
+Results reported at Wed Nov 25 10:47:21 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+sas 0_transpose_rdate_matrices.sas
+------------------------------------------------------------
+
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time   :      0.15 sec.
+    Max Memory :         3 MB
+    Max Swap   :        25 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+Sender: LSF System <lsfadmin@bc16-n12>
+Subject: Job 715088[5]: <transmat[1-6]> Exited
+
+Job <transmat[1-6]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc16-n12>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/sas> was used as the working directory.
+Started at Wed Nov 25 10:50:15 2009
+Results reported at Wed Nov 25 10:50:22 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+sas 0_transpose_rdate_matrices.sas
+------------------------------------------------------------
+
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time   :      3.12 sec.
+    Max Memory :         2 MB
+    Max Swap   :        25 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+Sender: LSF System <lsfadmin@bc16-n01>
+Subject: Job 715090[5]: <transmat[1-6]> Exited
+
+Job <transmat[1-6]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc16-n01>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/sas> was used as the working directory.
+Started at Wed Nov 25 10:53:25 2009
+Results reported at Wed Nov 25 10:53:43 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+sas 0_transpose_rdate_matrices.sas
+------------------------------------------------------------
+
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time   :      6.86 sec.
+    Max Memory :         3 MB
+    Max Swap   :        25 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+Sender: LSF System <lsfadmin@bc16-n12>
+Subject: Job 715091[5]: <transmat[1-6]> Exited
+
+Job <transmat[1-6]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc16-n12>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/sas> was used as the working directory.
+Started at Wed Nov 25 10:56:39 2009
+Results reported at Wed Nov 25 10:56:55 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+sas 0_transpose_rdate_matrices.sas
+------------------------------------------------------------
+
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time   :      7.12 sec.
+    Max Memory :         2 MB
+    Max Swap   :        25 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+Sender: LSF System <lsfadmin@bc14-n10>
+Subject: Job 715094[5]: <transmat[1-6]> Done
+
+Job <transmat[1-6]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc14-n10>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/sas> was used as the working directory.
+Started at Wed Nov 25 11:01:42 2009
+Results reported at Wed Nov 25 11:03:19 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+sas 0_transpose_rdate_matrices.sas
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     78.31 sec.
+    Max Memory :        28 MB
+    Max Swap   :       815 MB
+
+    Max Processes  :         7
+    Max Threads    :         9
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche

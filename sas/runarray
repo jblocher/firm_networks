@@ -1,0 +1,1 @@
+bsub -J "transmat[1-6]" -q week -o "transmat%I.out" -R blade sas 0_transpose_rdate_matrices.sas 

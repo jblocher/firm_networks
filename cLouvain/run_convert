@@ -1,0 +1,54 @@
+#!/bin/bash
+# Shell script to loop through and convert all of the text files to .bin files for Louvain Community Detection
+if [ $# -ne 1 ]
+then
+    echo "Error in $0 - Invalid Argument Count"
+    echo "Syntax: $0 type"
+    echo "where type 3 letters: cor, pct, or blk"
+    exit
+fi
+count=1
+fn_path='/smallfs/jabloche/fn_edge/'
+louvain_path='/netscr/jabloche/FirmNetworks/cLouvain/'
+# need RH5 to get 64 bit architecture. Won't run on blade or RH4
+bcommand='bsub -q week -R RH5 '
+type=$1
+while [ $count -lt 25 ]
+do
+	
+	echo $count
+	if 
+		[ $type = 'cor' ]
+	then
+		num=`expr $count + 48`
+	elif
+		[ $type = 'blk' ]
+	then
+		num=`expr $count + 24`
+	elif
+		[ $type = 'pct' ]
+	then
+		num=${count}
+	else
+		echo 'No valid type'
+	fi
+	
+	jname="conv_${type}${num}"
+	echo "Submitted $jname " 
+	$bcommand -J "${jname}" -o ${louvain_path}convert_${type}${num}.out ${louvain_path}convert -i ${fn_path}el_${type}${num}.txt -o ${fn_path}el_${type}${num}.bin -w
+	
+	#below works
+	#blknum=`expr $count + 24`
+	#blkjob="conv_blk${blknum}"
+	#echo "Submitted $blkjob "
+	#$bcommand -J "${blkjob}" -o ${louvain_path}convert_blk${blknum}.out ${louvain_path}convert -i ${fn_path}el_blk${blknum}.txt -o ${fn_path}el_blk${blknum}.bin -w
+	#cornum=`expr $count + 48`
+	#corjob="conv_cor${cornum}"
+	#echo "Submitted $corjob "
+	#$bcommand -J "${corjob}" -o ${louvain_path}convert_cor${cornum}.out ${louvain_path}convert -i ${fn_path}el_cor${cornum}.txt -o ${fn_path}el_cor${cornum}.bin -w
+	#pctjob="conv_pct${count}"
+	#echo "Submitted $pctjob "
+	#$bcommand -J "${pctjob}" -o ${louvain_path}convert_pct${count}.out ${louvain_path}convert -i ${fn_path}el_pct${count}.txt -o ${fn_path}el_pct${count}.bin -w
+
+    count=`expr $count + 1`
+done

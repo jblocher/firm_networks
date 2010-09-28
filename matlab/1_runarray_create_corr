@@ -1,0 +1,17 @@
+#!/bin/sh
+# High Memory Command - Jobarray
+# Run only about 20 at a time. Kill any jobs on the same node as the memory will grow and kill it.
+# bsub -J "makecorr[108,109,111,113]" -q week -o "makecorr%I.out" -R mem32 -R RH5 -R blade2 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+
+# Single Resource jobs
+# bsub -J "makecorr[77]" -q week -o "makecorr%I.out" -m bc01-n08 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+# bsub -J "makecorr[78]" -q week -o "makecorr%I.out" -m bc01-n14 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+# bsub -J "makecorr[79]" -q week -o "makecorr%I.out" -m bc02-n01 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+# bsub -J "makecorr[53]" -q week -o "makecorr%I.out" -m bc02-n04 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+# bsub -J "makecorr[54]" -q week -o "makecorr%I.out" -m bc02-n05 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+
+#bsub -J "makecorr[94]" -q idle -o "makecorr%I.out" -m bc17-n07 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+bsub -J "makecorr[109]" -q idle -o "makecorr%I.out" -m bc17-n08 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+#bsub -J "makecorr[84]" -q idle -o "makecorr%I.out" -m bc17-n09 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+#bsub -J "makecorr[39]" -q idle -o "makecorr%I.out" -m bc17-n10 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices
+#bsub -J "makecorr[98]" -q idle -o "makecorr%I.out" -m bc17-n11 /afs/isis/pkg/matlab-2009b/matlab -nodisplay -nojvm -nosplash -r create_corr_matrices

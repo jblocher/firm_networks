@@ -1,0 +1,48 @@
+Sender: LSF System <lsfadmin@bc01-n04>
+Subject: Job 779861[23]: <edgeL_txt[1-119]> Done
+
+Job <edgeL_txt[1-119]> was submitted from host <bc16-n13> by user <jabloche> in cluster <lucky>.
+Job was executed on host(s) <bc01-n04>, in queue <week>, as user <jabloche> in cluster <lucky>.
+</afs/isis.unc.edu/home/j/a/jabloche> was used as the home directory.
+</netscr/jabloche/FirmNetworks/matlab> was used as the working directory.
+Started at Mon Apr  5 11:24:05 2010
+Results reported at Mon Apr  5 11:26:24 2010
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -nojvm -nosplash -r write_edgeL_txt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    124.33 sec.
+    Max Memory :       454 MB
+    Max Swap   :      7243 MB
+
+    Max Processes  :         6
+    Max Threads    :        25
+
+The output (if any) follows:
+
+Your home directory for this job is /netscr/jabloche
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+Begin Edge List Conversion for type_data: bool_blk
+Reading Saved Matrix and Returning Adjacency Matrix: loadAdjMat
+loadAdjMat Done. data_type_index:blk_bool_23
+Creating Edgelist...
+Saving text file...
+Time Elapsed is 2 minutes, 15 seconds.
+>> 
